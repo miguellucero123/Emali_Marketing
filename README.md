@@ -1,32 +1,54 @@
-###  Presentación de Email Marketing Bancario
+Análisis y Optimización de Email Marketing Bancario
+Descripción General
+Este proyecto realiza un análisis avanzado de datos bancarios y simula campañas de email marketing para optimizar el rendimiento de envíos. El objetivo es proporcionar recomendaciones claras y visualmente atractivas para el jefe de marketing, usando un enfoque basado en evidencia y facilitando la toma de decisiones mediante un brochure ejecutivo generado directamente desde el notebook.
 
-### Descripción
-Análisis completo de estrategias de email marketing para el sector bancario, con insights basados en datos y recomendaciones accionables.
+Origen de los Datos
+Los datos utilizados provienen de un archivo CSV público hospedado en GitHub:
 
-###  Contenido del Repositorio
-- `presentacion_bancaria_email_marketing.html` - Presentación completa con gráficos incrustados
-- `README.md` - Este archivo
+bank-additional-full.csv (raw)
+El notebook S3_G5.ipynb carga estos datos automáticamente para su análisis y simulación.
 
-###  Cómo visualizar
-1. **Opción 1**: Descarga el archivo HTML y ábrelo en tu navegador
-2. **Opción 2**: Usa GitHub Pages (si está habilitado)
-3. **Opción 3**: Vista previa directa en GitHub (puede ser limitada)
+Proceso de Transformación
+Carga de Datos
+Se extraen los datos bancarios desde el enlace RAW de GitHub usando Pandas.
 
-###  Highlights de la Presentación
-- **+25-35%** Aumento en apertura de emails
-- **+15-20%** Incremento en tasas de clic
-- **-30%** Reducción en tasas de cancelación
-- **280%** ROI proyectado en primer trimestre
+Simulación de Métricas de Email Marketing
 
-###  Equipo
-Desarrollado por el Grupo 5 - Especialistas en Email Marketing Bancario
+A partir de los datos bancarios, se generan variables que simulan una campaña real de email marketing:
+Emails enviados
+Emails abiertos (según perfil y engagement)
+Clics en emails
+Hora y día del envío (basados en patrones de comportamiento bancario)
+Se segmentan los clientes y se aplican tasas de apertura/clic realistas según su perfil.
+Análisis Estadístico y Visual
 
-###  Contacto
-- Email: equipo5@bancostudent.com
-- Tel: +569 9931 9162
+Se calculan tasas de apertura, clic y CTR para cada segmento, hora y día.
+Se identifican los mejores momentos para enviar correos (mayor probabilidad de éxito).
+Se generan gráficos y tablas resumen que resumen los hallazgos principales.
+Brochure Ejecutivo
 
-###  Notas Técnicas
-- Las imágenes están incrustadas en Base64 para máxima compatibilidad
+El notebook está diseñado para generar páginas estilo brochure, ideales para presentaciones ejecutivas.
+El objetivo es convencer con evidencia al jefe de marketing sobre la eficacia del enfoque analítico.
+Principales Hallazgos
+Mejor hora para envío: 09:00 (mayor tasa de apertura y clic).
+Mejor día para envío: Jueves (mayor tasa de apertura y clic).
+Diferencia entre días laborales y fines de semana: Notable ventaja en días laborales respecto al engagement.
+Ejecución y Uso
+Abre el archivo S3_G5.ipynb en Jupyter Notebook.
+Ejecuta todas las celdas en orden. El notebook descargará los datos y realizará todo el análisis automáticamente.
+Los gráficos y tablas generadas pueden usarse directamente para presentaciones o para la toma de decisiones en el área de marketing.
+Requisitos
+Python 3.8+
+Bibliotecas utilizadas: pandas, numpy, matplotlib, seaborn, IPython
+Instala los paquetes requeridos con:
+
+bash
+pip install pandas numpy matplotlib seaborn ipython
+Objetivo del Proyecto
+El propósito fundamental es demostrar, mediante un análisis reproducible y visualmente persuasivo, que la estrategia de segmentación y envío de campañas de email marketing propuesta es óptima para el banco. El brochure generado puede ser presentado directamente a la gerencia de marketing como soporte para la toma de decisiones.
+
+Créditos
+Departamento de Analítica — Grupo 5, Taller de Analítica Comercial
 - Compatible con todos los navegadores modernos
 - No requiere conexión a internet para visualizar
 
