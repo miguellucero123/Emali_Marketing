@@ -1,1 +1,1 @@
-# Emali_Marketing
+# Email_Marketing
