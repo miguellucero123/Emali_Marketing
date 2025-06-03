@@ -1,6 +1,4 @@
-# Click & Crédito 4.0: Inbox Financiero que Convierte en Tiempo Real
-
-##  Presentación de Email Marketing Bancario
+###  Presentación de Email Marketing Bancario
 
 ### Descripción
 Análisis completo de estrategias de email marketing para el sector bancario, con insights basados en datos y recomendaciones accionables.
